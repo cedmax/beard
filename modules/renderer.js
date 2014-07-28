@@ -4,7 +4,7 @@ module.exports = function(callback){
 	return function(state){
 		var mustache = require('mustache');
 		var fs = require('fs');
-		var template = fs.readFileSync('view/index.mustache').toString();
+		var template = fs.readFileSync(__dirname + '/../view/index.mustache').toString();
 		
 		callback(mustache.to_html(template, {
 			state: (state?state:null)
