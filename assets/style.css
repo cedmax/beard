@@ -1,0 +1,55 @@
+body {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    line-height: 1;
+    background: #2D1719;
+    color:#FFF5A4;
+    font-size:5vmin;
+    line-height: 1.2;
+    text-shadow: 0px 1px 1px #221213;
+}
+
+main {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+    top:40%;
+    left:50%;
+    max-width: 90%;
+    width:1280px;
+}
+
+a, a:hover, a:visited {
+    color: #F161B2;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color:#FFFFFF;
+}
+
+h1 {
+    font-size:20vmin;
+    text-align: center;
+    display: block;
+    margin:0;
+    margin:1vmin 0;
+}
+
+h2 {
+    font-size:7vmin;
+    display: inline;
+}
+
+p {
+    margin:0 0 1vmin;
+}
+
+p:last-child {
+    text-align: right;
+    font-size:3vmin;
+}
+
+img {
+    opacity:0.8;
+}

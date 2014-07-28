@@ -1,0 +1,18 @@
+{
+  "name": "beard",
+  "version": "0.0.0",
+  "description": "do I wear a beard now?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "express": "^4.7.2",
+    "mustache": "^0.8.2",
+    "request": "^2.39.0",
+    "serve-static": "^1.4.2"
+  }
+}
