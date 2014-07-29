@@ -11,6 +11,7 @@
   "dependencies": {
     "cheerio": "^0.17.0",
     "express": "^4.7.2",
+    "moment": "^2.7.0",
     "mustache": "^0.8.2",
     "request": "^2.39.0",
     "serve-static": "^1.4.2"

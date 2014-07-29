@@ -16,7 +16,7 @@
 			next();
 		});
 
-		var parse = parser(render);
+		var parse = parser(render, req.query.shaved);
 		fetch(parse);
 	});
 
