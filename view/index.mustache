@@ -16,9 +16,10 @@
 	<body>
 		<main>
 			<p><h2>How does my beard look like</h2>, you ask?</p>
-			<p>Well, right now it's freaking</p>
+			{{#state}}<p>Well, right now it's freaking</p>
 			<h1>{{state}}!</h1>
-			<p>In fact, it looks pretty much like <a href="assets/img/{{state}}.jpg">this</a></p>
+			<p>In fact, it looks pretty much like <a href="assets/img/{{state}}.jpg">this</a></p>{{/state}}
+			{{^state}}<p>To be honest, right now I don't have a clue, would you mind trying again later?</p>{{/state}}
 		</main>
 		<script src="assets/js/jquery-2.0.1.min.js"></script>
 		<script src="assets/js/backstretch.min.js"></script>

@@ -1,9 +1,11 @@
+/*global __dirname */
+
 (function(){
 	'use strict';
 
 	var express = require('express');
 	var fetch = require('./modules/fetcher');
-	var parser = require('./modules/parser');
+	var logBeard = require('./modules/parseState');
 	var renderer = require('./modules/renderer');
 
 	var app = express();
@@ -15,9 +17,8 @@
 			res.send(html);
 			next();
 		});
-
-		var parse = parser(render, req.query.shaved);
-		fetch(parse);
+		
+		fetch(logBeard(render, req.query.shaved));
 	});
 
 	app.listen(21693);
