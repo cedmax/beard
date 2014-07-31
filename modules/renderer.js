@@ -2,6 +2,7 @@
 
 module.exports = function(callback, url){
 	'use strict';
+	var ga = require('../config').ga;
 
 	return function(state){
 		var mustache = require('mustache');
@@ -10,7 +11,8 @@ module.exports = function(callback, url){
 		
 		callback(mustache.to_html(template, {
 			state: (state?state:null),
-			url: url
+			url: url,
+			ga: ga
 		}));
 	};
 };

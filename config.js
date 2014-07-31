@@ -5,5 +5,6 @@ module.exports = {
 		[30, '(too)short'],
 		[120, 'awesome'],
 		[Number.MAX_VALUE, 'pirate(ish)']
-	]
+	], 
+	ga: 'UA-240287-14'
 };
