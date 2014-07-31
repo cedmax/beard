@@ -1,4 +1,6 @@
-module.exports = function(callback){
+/*global __dirname */
+
+module.exports = function(callback, url){
 	'use strict';
 
 	return function(state){
@@ -7,7 +9,8 @@ module.exports = function(callback){
 		var template = fs.readFileSync(__dirname + '/../view/index.mustache').toString();
 		
 		callback(mustache.to_html(template, {
-			state: (state?state:null)
+			state: (state?state:null),
+			url: url
 		}));
 	};
 };

@@ -1,3 +1,5 @@
+/*global $ */
+
 $(function(){
 	'use strict';
 	$('a').on('click', function(evt){
@@ -6,4 +8,4 @@ $(function(){
 		var img = $elm.attr('href');
 		$.backstretch(img);	
 	});
-})
+});

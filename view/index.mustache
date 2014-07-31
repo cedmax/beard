@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<script>var loc = document.location.href;if (loc.slice(-1)!=='/'){document.location.href = loc + '/';}</script>
 		<meta charset="utf-8">
 		<title>My beard is...</title>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700' rel='stylesheet' type='text/css'>
-		<link type="text/css" rel="stylesheet" href="assets/style.css" />
+		<link type="text/css" rel="stylesheet" href="{{url}}/assets/style.css" />
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-		<meta property="og:image" content="http://cedmax.com/beard/assets/img/beard.png"/>
+		<link rel="icon" href="{{url}}/assets/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="{{url}}/assets/favicon.ico" type="image/x-icon">
+		<meta property="og:image" content="{{url}}/assets/img/beard.png"/>
 		<meta name="twitter:site" content="@cedmax">
 	</head>
 	<body>
@@ -18,15 +17,15 @@
 			<p><h2>How does my beard look like</h2>, you ask?</p>
 			{{#state}}<p>Well, right now it's freaking</p>
 			<h1>{{state}}!</h1>
-			<p>In fact, it looks pretty much like <a href="assets/img/{{state}}.jpg">this</a></p>{{/state}}
+			<p>In fact, it looks pretty much like <a href="{{url}}/assets/img/{{state}}.jpg">this</a></p>{{/state}}
 			{{^state}}<p>To be honest, right now I don't have a clue, would you mind trying again later?</p>{{/state}}
 		</main>
-		<script src="assets/js/jquery-2.0.1.min.js"></script>
-		<script src="assets/js/backstretch.min.js"></script>
-		<script src="assets/js/app.js"></script>
+		<script src="{{url}}/assets/js/jquery-2.0.1.min.js"></script>
+		<script src="{{url}}/assets/js/backstretch.min.js"></script>
+		<script src="{{url}}/assets/js/app.js"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-240287-22']);
+			_gaq.push(['_setAccount', '{{ga}}']);
 			_gaq.push(['_trackPageview']);
 
 			(function() {
