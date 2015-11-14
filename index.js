@@ -13,10 +13,12 @@
 	app.use('/assets', express.static(__dirname + '/assets'));
 
 	app.get('/', function(req, res, next){
+		var protocol = (req.secure || req.headers['x-forwarded-proto'])?'https':'http';
+
 		var render = renderer(function(html){
 			res.send(html);
 			next();
-		}, req.protocol + '://' + req.get('host'));
+		}, protocol + '://' + req.get('host'));
 		
 		fetch(logBeard(render, req.query.shaved));
 	});
