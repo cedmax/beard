@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^0.17.0",
+    "cheerio": "^0.20.0",
     "express": "^4.7.2",
     "moment": "^2.7.0",
     "mustache": "^0.8.2",
